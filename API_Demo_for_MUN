@@ -1,7 +1,6 @@
 1)	Demo: Hacking URLs
-open tutorial at https://github.com/OceanNetworksCanada/api-tutorial/blob/master/Workshop.ipynb
-
-How to find your TOKEN
+ - open tutorial at https://github.com/OceanNetworksCanada/api-tutorial/blob/master/Workshop.ipynb
+ - Find your TOKEN
 
   a)  Find All locations:
       https://data.oceannetworks.ca/api/locations?method=get&token=e351aec6-e74e-410d-98a6-28463723e835 
