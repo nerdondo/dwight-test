@@ -12,7 +12,7 @@
       https://data.oceannetworks.ca/api/deviceCategories?method=get&token=e351aec6-e74e-410d-98a6-28463723e835&locationCode=HRBIP 
 
   d)	Depth Devices at Holyrood:
-      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth&token=e351aec6-e74e-410d-98a6-28463723e835&locationCode=HRBIP 
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e83 
       
   e)	Using Apiproxy:
       https://data.oceannetworks.ca/apiproxy/deviceCategories?method=get&deviceCategoryName=depth&locationCode=HRBIP
