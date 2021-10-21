@@ -12,7 +12,7 @@
       
   c)	All LOCATIONS with a fluorometer: 
       https://data.oceannetworks.ca/api/locations?method=get&deviceCategoryCode=FLNTU&token=e351aec6-e74e-410d-98a6-28463723e835 
-      https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=YOUR_TOKEN_HERE
+      https://data.oceannetworks.ca/api/locations?method=get&locationCode=FLNTU&token=YOUR_TOKEN_HERE
       
   d) All fluorometer DEPLOYMENTS in Barkley Axis:
       https://data.oceannetworks.ca/api/deployments?method=get&deviceCategoryCode=FLNTU&locationCode=BACAX&token=e351aec6-e74e-410d-98a6-28463723e835 
