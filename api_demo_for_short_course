@@ -10,12 +10,18 @@
       https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e835 
       https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=YOUR_TOKEN_HERE
       
+  b)	All locations with a fluorometer: 
+      https://data.oceannetworks.ca/api/locations?method=get&deviceCategoryCode=FLNTU&token=e351aec6-e74e-410d-98a6-28463723e835 
+      https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=YOUR_TOKEN_HERE
+      
+      
   c)	Device categories at Holyrood:
       https://data.oceannetworks.ca/api/deviceCategories?method=get&token=e351aec6-e74e-410d-98a6-28463723e835&locationCode=HRBIP 
-      ttps://data.oceannetworks.ca/api/deviceCategories?method=get&token=
+      ttps://data.oceannetworks.ca/api/deviceCategories?method=get&token=YOUR_TOKEN_HERE
 
   d)	Depth Devices at Holyrood:
-      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e83 
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e835 
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=YOUR_TOKEN_HERE
       
   e)	Using Apiproxy:
       https://data.oceannetworks.ca/apiproxy/deviceCategories?method=get&deviceCategoryName=depth&locationCode=HRBIP
