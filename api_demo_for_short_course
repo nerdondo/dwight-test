@@ -1,0 +1,46 @@
+1)	Demo: Hacking URLs
+ - open tutorial at https://github.com/OceanNetworksCanada/api-tutorial/blob/master/Workshop.ipynb
+ - Find your TOKEN
+
+  a)  Find All locations:
+      https://data.oceannetworks.ca/api/locations?method=get&token=e351aec6-e74e-410d-98a6-28463723e835 
+      https://data.oceannetworks.ca/api/locations?method=get&token=YOUR_TOKEN_HERE
+      
+  b)	Holyrood location info: 
+      https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e835 
+      https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=YOUR_TOKEN_HERE
+      
+  c)	Device categories at Holyrood:
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&token=e351aec6-e74e-410d-98a6-28463723e835&locationCode=HRBIP 
+      ttps://data.oceannetworks.ca/api/deviceCategories?method=get&token=
+
+  d)	Depth Devices at Holyrood:
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e83 
+      
+  e)	Using Apiproxy:
+      https://data.oceannetworks.ca/apiproxy/deviceCategories?method=get&deviceCategoryName=depth&locationCode=HRBIP
+
+  f)  Deployments at Holyrood:
+      https://data.oceannetworks.ca/apiproxy/deployments?method=get&locationCode=HRBIP
+      
+  g)	Get CTD Data for certain time range:
+      https://data.oceannetworks.ca/apiproxy/rawdata?method=getByDevice&deviceCode=SBECTD37SIP5682&dateFrom=2021-05-01T00:00:00.000Z&dateTo=2021-05-01T00:00:05.000Z 
+
+  g)	Get CTD specific sensor data for certain time range:
+      https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=HRBIP&deviceCategoryCode=CTD&dateFrom=2021-05-01T00:00:00.000Z&dateTo=2021-05-01T00:05:00.000Z&sensorCategoryCodes=salinity 
+
+  h)	Download a hydrophone file:
+      i)	Make the request
+          https://data.oceannetworks.ca/apiproxy/dataProductDelivery?method=request&locationCode=HRBIP&deviceCategoryCode=HYDROPHONE&dataProductCode=AD&extension=flac&dateFrom=2021-05-05T00:00:00.000Z&dateTo=2021-05-05T00:05:00.000Z
+
+      ii) Check the status
+          https://data.oceannetworks.ca/apiproxy/dataProductDelivery?method=status&dpRequestId=8572350
+
+      iii) Run the job
+          https://data.oceannetworks.ca/apiproxy/dataProductDelivery?method=run&dpRequestId=8572350
+
+      iv)	Download the run
+          https://data.oceannetworks.ca/apiproxy/dataProductDelivery?method=download&dpRunId=20022894&index=1
+              (1)	Index 1 is calibrations
+              (2)	Index 2 is the 1st flac file
+              (3)	Index 3 is the 2nd flac file
