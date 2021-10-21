@@ -2,40 +2,52 @@
  - open tutorial at https://github.com/OceanNetworksCanada/api-tutorial/blob/master/Workshop.ipynb
  - Find your TOKEN
 
-  a)  Find All locations:
+  a)  Find All LOCATIONS:
       https://data.oceannetworks.ca/api/locations?method=get&token=e351aec6-e74e-410d-98a6-28463723e835 
       https://data.oceannetworks.ca/api/locations?method=get&token=YOUR_TOKEN_HERE
       
-  b)	Holyrood location info: 
+  b)	Holyrood LOCATION info: 
       https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e835 
       https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=YOUR_TOKEN_HERE
       
-  b)	All locations with a fluorometer: 
+  c)	All LOCATIONS with a fluorometer: 
       https://data.oceannetworks.ca/api/locations?method=get&deviceCategoryCode=FLNTU&token=e351aec6-e74e-410d-98a6-28463723e835 
       https://data.oceannetworks.ca/api/locations?method=get&locationCode=HRBIP&token=YOUR_TOKEN_HERE
       
+  d) All fluorometer DEPLOYMENTS in Barkley Axis:
+      https://data.oceannetworks.ca/api/deployments?method=get&deviceCategoryCode=FLNTU&locationCode=BACAX&token=e351aec6-e74e-410d-98a6-28463723e835 
+      https://data.oceannetworks.ca/api/deployments?method=get&deviceCategoryCode=FLNTU&locationCode=BACAX&token=YOUR_TOKEN_HERE
       
-  c)	Device categories at Holyrood:
-      https://data.oceannetworks.ca/api/deviceCategories?method=get&token=e351aec6-e74e-410d-98a6-28463723e835&locationCode=HRBIP 
-      ttps://data.oceannetworks.ca/api/deviceCategories?method=get&token=YOUR_TOKEN_HERE
-
-  d)	Depth Devices at Holyrood:
-      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=e351aec6-e74e-410d-98a6-28463723e835 
-      https://data.oceannetworks.ca/api/deviceCategories?method=get&deviceCategoryName=depth5&locationCode=HRBIP&token=YOUR_TOKEN_HERE
+  e)	DEVICE CATEGORIES at Barkley Axis:
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&locationCode=BACAX&token=e351aec6-e74e-410d-98a6-28463723e835 
+      https://data.oceannetworks.ca/api/deviceCategories?method=get&locationCode=BACAX&token=YOUR_TOKEN_HERE
       
-  e)	Using Apiproxy:
-      https://data.oceannetworks.ca/apiproxy/deviceCategories?method=get&deviceCategoryName=depth&locationCode=HRBIP
+  f) Same command, using APIPROXY (login is required)
+      https://data.oceannetworks.ca/apiproxy/deviceCategories?method=get&locationCode=BACAX
 
-  f)  Deployments at Holyrood:
-      https://data.oceannetworks.ca/apiproxy/deployments?method=get&locationCode=HRBIP
+  g)	All DEVICE CATEGORIES that produce property pressure:
+      https://data.oceannetworks.ca/apiproxy/deviceCategories?method=get&propertyCode=pressure
+
+  h) All PROPERTIES measured by a particular CTD (deviceCode SBECTD16p7028):
+      https://data.oceannetworks.ca/apiproxy/properties?method=get&deviceCode=SBECTD16p7028
       
-  g)	Get CTD Data for certain time range:
-      https://data.oceannetworks.ca/apiproxy/rawdata?method=getByDevice&deviceCode=SBECTD37SIP5682&dateFrom=2021-05-01T00:00:00.000Z&dateTo=2021-05-01T00:00:05.000Z 
+  i) All properties measured at the Barkley Hydrates location (locationCode BACHY):
+      https://data.oceannetworks.ca/apiproxy/properties?method=get&locationCode=BACHY
 
-  g)	Get CTD specific sensor data for certain time range:
-      https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=HRBIP&deviceCategoryCode=CTD&dateFrom=2021-05-01T00:00:00.000Z&dateTo=2021-05-01T00:05:00.000Z&sensorCategoryCodes=salinity 
+  GETTING REAL TIME DATA
+  RAWDATA
+      
+  a)	Get CTD Data for certain time range:
+      https://data.oceannetworks.ca/apiproxy/rawdata?method=getByDevice&deviceCode=SBECTD37SIP5682&dateFrom=2021-10-21T00:00:00.000Z&dateTo=2021-10-21T00:00:05.000Z 
 
-  h)	Download a hydrophone file:
+  b)	Get CTD specific sensor data for certain time range:
+      https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=HRBIP&deviceCategoryCode=CTD&dateFrom=2021-10-21T00:00:00.000Z&dateTo=2021-10-21T00:00:05.000Z&sensorCategoryCodes=salinity 
+
+  c) BPR scalar data:
+      https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=NC89&deviceCategoryCode=BPR&dateFrom=2021-01-28T00:00:00.000Z&dateTo=2021-01-28T00:00:05.000Z
+  
+  DATAPRODUCTDELIVERY
+  d)	Download a hydrophone file:
       i)	Make the request
           https://data.oceannetworks.ca/apiproxy/dataProductDelivery?method=request&locationCode=HRBIP&deviceCategoryCode=HYDROPHONE&dataProductCode=AD&extension=flac&dateFrom=2021-05-05T00:00:00.000Z&dateTo=2021-05-05T00:05:00.000Z
 
