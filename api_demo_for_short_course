@@ -44,7 +44,7 @@
       https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=HRBIP&deviceCategoryCode=CTD&dateFrom=2021-10-21T00:00:00.000Z&dateTo=2021-10-21T00:00:05.000Z&sensorCategoryCodes=salinity 
 
   c) BPR scalar data:
-      https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=NC89&deviceCategoryCode=BPR&dateFrom=2021-01-28T00:00:00.000Z&dateTo=2021-01-28T00:00:05.000Z
+      https://data.oceannetworks.ca/apiproxy/scalardata?method=getByLocation&locationCode=NC89&deviceCategoryCode=BPR&dateFrom=2021-01-28T00:00:00.000Z&dateTo=2021-01-28T00:00:05.000Z&sensorCategoryCodes=pressure
   
   DATAPRODUCTDELIVERY
   d)	Download a hydrophone file:
